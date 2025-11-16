@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver Visualizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased p-4">
+
+    <div class="max-w-2xl mx-auto text-center">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800">Sudoku Solver Visualizer</h1>
+        <p class="mt-2 text-lg text-gray-600">A visual tool to solve Sudoku puzzles using a recursive backtracking algorithm.</p>
+    </div>
+
+    <div id="sudoku-grid" class="sudoku-grid">
+    </div>
+
+    <div class="max-w-xl mx-auto mt-4 grid grid-cols-2 md:grid-cols-4 gap-3">
+        <select id="puzzle-select" class="col-span-2 md:col-span-1 p-2 border border-gray-300 rounded-md shadow-sm bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <option value="easy">Easy Puzzle</option>
+            <option value="medium">Medium Puzzle</option>
+            <option value="hard">Hard Puzzle</option>
+            <option value="extreme">Extreme Puzzle</option>
+        </select>
+        
+        <button id="solve-btn" class="col-span-2 md:col-span-1 p-3 font-semibold text-white bg-blue-600 rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all">
+            Solve
+        </button>
+        
+        <button id="validate-btn" class="p-3 font-semibold text-white bg-green-600 rounded-md shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all">
+            Validate
+        </button>
+        
+        <button id="clear-btn" class="p-3 font-semibold text-white bg-red-600 rounded-md shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition-all">
+            Clear
+        </button>
+    </div>
+
+    <div class="max-w-xl mx-auto mt-4 text-center">
+        <p id="status-message" class="text-lg font-medium text-gray-700 h-6"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
