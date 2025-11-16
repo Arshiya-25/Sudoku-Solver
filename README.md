@@ -2,8 +2,6 @@
 
 A modern, interactive Sudoku Solver that visualizes the entire solving process in real-time. It's built with vanilla JavaScript and styled with Tailwind CSS, providing a clean, responsive, and educational tool for understanding the Recursive Backtracking (DFS) algorithm.
 
-🔗 **Live demo**: 
-
 ## Features
 - Interactive Grid: A full 9x9 grid where users can input their own puzzles.
 - Algorithm Visualization: Watch the backtracking algorithm work! The app animates the "guesses" (placing a number) and "backtracks" (removing a number) in real-time.
